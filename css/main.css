@@ -1,0 +1,71 @@
+header {
+    text-align: left;
+    padding: 5px;
+}
+body {
+    margin: 60px auto;
+    width: 70%;
+	background-color: rgb(10,10,10);
+}
+nav ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+    }
+footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size:2.5em;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-align:left;
+    font-family: 'Times', serif;
+    color:rgb(255, 255, 255);
+    text-transform:uppercase;
+    line-height:1em;
+    padding-top:40px; 
+    @include breakpoint(mama-bear) {
+       padding-top:20px;
+    }
+    @include breakpoint(baby-bear) {
+      font-size:1.8em;  
+      padding-top:20px;
+    } 
+  }
+
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: rgb(100, 100, 100);
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
