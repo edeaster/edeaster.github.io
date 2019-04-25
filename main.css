@@ -36,15 +36,14 @@ a:hover {
     text-align: center​;
     color: rgb(10, 10, 10);
     line-height:1em;
-     text-align: center ;
+    text-align: center ;
     color: rgb(10, 10, 10);
     padding-top:40px; 
-    @include breakpoint(mama-bear) {
+	@include breakpoint(mama-bear) {
        padding-top:20px;
     }
     @include breakpoint(baby-bear) {
-      font-size:1.8em;  
-      padding-top:20px;  
+        padding-top:20px;  
     } 
   }
 h1 {
