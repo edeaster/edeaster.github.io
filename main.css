@@ -26,6 +26,11 @@ a:hover {
     text-decoration: underline;
     color: rgb(75,0,130)
 }
+.links{
+  color: rgb(0,0,139);
+  text-decoration: none;
+  font-size: 17px;
+}
 .name_text {
     font-family: ambroise-std, serif;
     font-weight: 400;
