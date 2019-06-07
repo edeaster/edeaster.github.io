@@ -17,20 +17,36 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(0,0,139);
-}
-a:hover {
-    text-decoration: underline;
-    color: rgb(75,0,130)
-}
-.links{
+a.links{
   color: rgb(0,0,139);
   text-decoration: none;
   font-size: 17px;
 }
+a.nav_bar_link{
+    font-size: 20px;
+    color: rgb(0,0,139);
+    text-decoration:none;
+}
+a.nav_bar_link:hover {
+    text-decoration: underline;
+    color: rgb(75,0,130);
+}
+
+a.project_head{
+  font-family: 'Meera Inimai', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(40,40,40);
+  padding-top: 0px;
+  text-decoration:none;
+}
+
+a.project_head:hover{
+  text-decoration: underline;
+}
+
 .name_text {
     font-family: ambroise-std, serif;
     font-weight: 400;
@@ -41,14 +57,15 @@ a:hover {
     text-align: center​;
     color: rgb(10, 10, 10);
     line-height:1em;
-    text-align: center ;
+     text-align: center ;
     color: rgb(10, 10, 10);
     padding-top:40px; 
-	@include breakpoint(mama-bear) {
+    @include breakpoint(mama-bear) {
        padding-top:20px;
     }
     @include breakpoint(baby-bear) {
-        padding-top:20px;  
+      font-size:1.8em;  
+      padding-top:20px;  
     } 
   }
 h1 {
@@ -61,14 +78,36 @@ h1 {
   padding-top: 0px;
   
 }
+.section{
+  font-family: 'Meera Inimai', sans-serif;
+}
 h3{
-  font-family: 'Meera Inimai',sans-serif;
-  font-size: 20px;
+  font-family: 'Meera Inimai', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(40,40,40);
+  padding-top: 0px;
+  text-decoration:none;
 }
 
+
 p {
-    font-size: 15px;
-	font-family: 'Meera Inimai',sans-serif;
-    line-height: 17px;
+    font-family:'Meera Inimai', sans-serif;
+    font-size: 17px;
+    line-height: 19px;
     color: rgb(100, 100, 100);
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
