@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 80px auto;
     width: 60%;
@@ -100,6 +103,7 @@ p {
     color: rgb(100, 100, 100);
 	text-align: left;
 }
+
 .column {
   float: left;
   width: 50%;
