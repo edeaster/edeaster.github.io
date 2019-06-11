@@ -3,12 +3,20 @@ layout: default
 title: Elizabeth Easter
 ---
 
-<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<div class="project_container">
+          <h1> <a class= "project_head" href= "garmin_data_project.html" >Visualizing Garmin GPS Data </a></h1>
+           
+   <p> This project delves into the GPS data I have collected over the past 5 years for
+                running, cycling and swimming. The visualizations were created using R along with ggplot2. </p>
+         <div class="row">
+          <div class="column">
+            <img src="projects/garmin_vis/images/overview_time.png" alt="1" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="projects/garmin_vis/images/month_year_all.png" alt="2" style="width:100%">
+          </div>
+          
+        </div>
+          </div><!--project container-->
 
 
