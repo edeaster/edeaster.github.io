@@ -1,3 +1,4 @@
 name: Elizabeth Easter
 markdown: kramdown
-
+baseurl: '/blgo/' 
+url: 'http://elizabetheaster.com'
