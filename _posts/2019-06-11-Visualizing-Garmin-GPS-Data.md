@@ -21,7 +21,7 @@ have increased. This is partially because I only started recording swimming and 
 when I got a multi-sport watch. When controlling for the time between August and December my running
 decreased slightly, swimming stayed the same and cycling increased.
 <img src="/projects/garmin_vis/images/jul-dec_time_by_act.png" width="600" height:"400">
-![](/projects/garmin_vis/images/month_year_all.png =800x400)
+![](/projects/garmin_vis/images/month_year_all.png)
 
 I started road cycling in June of 2017 but didn’t start recording my rides until August 2017 when 
 I got a multi-sport GPS watch. From that point on, the amount of time I spent exercising stayed elevated
