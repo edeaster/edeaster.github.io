@@ -1,4 +1,4 @@
 name: Elizabeth Easter
 markdown: kramdown
-baseurl: '/blog/' 
+baseurl: '/blog' 
 url: 'http://elizabetheaster.com'
