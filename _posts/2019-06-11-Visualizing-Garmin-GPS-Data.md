@@ -4,8 +4,6 @@ title: "Visualizing Garmin GPS Data"
 date: 2019-06-11
 ---
 
-				
-  
 The goal of this project was to explore my running, cycling and swimming data from the past 5 years.
 Applications like Strava and Garmin Connect provide good tools for visualizing training data over 
 short periods of time but aren't good for looking at how your training has changed over the course ofyears.
@@ -23,13 +21,14 @@ have increased. This is partially because I only started recording swimming and 
 when I got a multi-sport watch. When controlling for the time between August and December my running
 decreased slightly, swimming stayed the same and cycling increased.
 <img src="/projects/garmin_vis/images/jul-dec_time_by_act.png" width="600" height:"400">
-![](/projects/garmin_vis/images/month_year_all.png=800x400)
+![](/projects/garmin_vis/images/month_year_all.png =800x400)
 
 I started road cycling in June of 2017 but didn’t start recording my rides until August 2017 when 
 I got a multi-sport GPS watch. From that point on, the amount of time I spent exercising stayed elevated
  above the previous years.
  
  ## Cycling
+ 
 I was interested to see how my cycling habits varied throughout the year. Intuitively, I felt like I rode slower 
 and for shorter distances in the winter. 
 ![](/projects/garmin_vis/images/Max_avg_speed_mon.png=800x400)
@@ -50,7 +49,6 @@ As expected, I rode more in the warmer months than I did during the winter month
 ## Running
 
 ![](/projects/garmin_vis/images/avg_run_dis_mon.png=800x400)
-
 The two spikes in November 2015 and 2016 are from the marathons I ran those years. The average
 was heavily skewed since I took time off after those races.  
 ![](/projects/garmin_vis/images/tot_run_dis_mon.png=800x400)
