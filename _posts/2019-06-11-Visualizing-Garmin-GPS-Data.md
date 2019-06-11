@@ -14,19 +14,20 @@ I started running in 2009 when I joined my high school’s cross-country team bu
 The data for this article was downloaded from my Garmin Connect account. The charts in this article were
 created with R and ggplot2, if you are interested in the
 code used to generate the visualization in this article please visit my [github page](https://github.com/edeaster/Garmin-Visualization).
-<img src="/projects/garmin_vis/images/overview_time.png" width="600" height="400" style="float: center;">
 
- My running volume has stayed relatively the same for the past two years but my cycling and swimming 
+<img src="/projects/garmin_vis/images/overview_time.png" width="600" height="400" align="center">
+
+My running volume has stayed relatively the same for the past two years but my cycling and swimming 
 have increased. This is partially because I only started recording swimming and biking in August for 2017
 when I got a multi-sport watch. When controlling for the time between August and December my running
 decreased slightly, swimming stayed the same and cycling increased.
-<img src="/projects/garmin_vis/images/jul-dec_time_by_act.png" width="600" height="400">
-<img src="/projects/garmin_vis/images/month_year_all.png" width="800" height="400">
 
+<img src="/projects/garmin_vis/images/jul-dec_time_by_act.png" width="600" height="400" align="center">
+<img src="/projects/garmin_vis/images/month_year_all.png" width="800" height="400" align="center">
 
 I started road cycling in June of 2017 but didn’t start recording my rides until August 2017 when 
 I got a multi-sport GPS watch. From that point on, the amount of time I spent exercising stayed elevated
- above the previous years.
+above the previous years.
  
  ## Cycling
  
