@@ -1,4 +1,4 @@
 name: Elizabeth Easter
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-baseurl: "/elizabetheaster.com"
+
