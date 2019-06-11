@@ -2,3 +2,4 @@ name: Elizabeth Easter
 markdown: kramdown
 baseurl: "/blog"
 url: "http://elizabetheaster.com"
+permalink: /blog/:year/:month/:day/:title
