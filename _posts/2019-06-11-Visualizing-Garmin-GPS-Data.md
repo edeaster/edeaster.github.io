@@ -16,4 +16,4 @@ I started running in 2009 when I joined my high school’s cross-country team bu
 The data for this article was downloaded from my Garmin Connect account. The charts in this article were
 created with R and ggplot2, if you are interested in the
 code used to generate the visualization in this article please visit my [github page](https://github.com/edeaster/Garmin-Visualization).
-![](projects/garmin_vis/images/overview_time.png)	
+![](/projects/garmin_vis/images/overview_time.png)	
