@@ -46,25 +46,26 @@ colnames(data)[colnames(data)=="Training.Stress.ScoreÂ."] <- "Training.Stress.S
 
 for(i in c(1:12)){ #Insert entries with zero distance for monthes with no running data
       for(j in year_list){
-		data<-add_row(data, Activity.Type ="running", Date = paste(j ,"-",i ,"-" ,"01"," ", "08:00:00", sep = ""),
-			Favorite=NA, Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,Aerobic.TE =NA,
-			Avg.Run.Cadence=NA, Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,Elev.Gain=NA,Elev.Loss=NA,
-			Avg.Stride.Length=NA,Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,
-			Training.Stress.Score=NA,Grit=NA,Flow=NA,Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,
-			Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,Decompression=NA,Best.Lap.Time=NA,
-			Number.of.Laps=NA,Max.Temp=NA
+		data<-add_row(data, Activity.Type ="running", Date = paste(j ,"-",i ,"-" ,"01"," ", "08:00:00", 
+			sep = ""),Favorite=NA, Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,
+			Aerobic.TE =NA,Avg.Run.Cadence=NA, Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,
+			Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,Avg.Vertical.Ratio=NA, 
+			Avg.Vertical.Oscillation=NA, Training.Stress.Score=NA,Grit=NA,Flow=NA,
+			Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,
+			Decompression=NA,Best.Lap.Time=NA, Number.of.Laps=NA,Max.Temp=NA
             )
             
       }
       
 }
 
-data<-add_row(data, Activity.Type ="lap_swimming", Date = paste("2018" ,"-","10" ,"-" ,"01"," ", "08:00:00", sep = ""),
-	Favorite=NA,Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,Aerobic.TE =NA, Avg.Run.Cadence=NA,
-	Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,
-	Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,Training.Stress.Score=NA,Grit=NA,Flow=NA,
-	Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,
-	Decompression=NA,Best.Lap.Time=NA,Number.of.Laps=NA,Max.Temp=NA
+data<-add_row(data, Activity.Type ="lap_swimming", Date = paste("2018" ,"-","10" ,"-" ,"01"," ", 
+	"08:00:00", sep = ""), Favorite=NA,Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,
+	Max.HR=NA,Aerobic.TE =NA, Avg.Run.Cadence=NA,Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,
+	Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,
+	Training.Stress.Score=NA,Grit=NA,Flow=NA,Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,
+	Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA, Decompression=NA,Best.Lap.Time=NA,
+	Number.of.Laps=NA,Max.Temp=NA
 )
 
  ```
@@ -113,7 +114,8 @@ To do this I added variables for each of these by formatting the date and mutati
 dataset. 
 
 ```
-data$Distance <- lapply(data$Distance, sub, patt ="[,]", repl="") #Take out the comma in distance and change data type to numeric
+data$Distance <- lapply(data$Distance, sub, patt ="[,]", repl="") 
+#Take out the comma in distance and change data type to numeric
 data$Distance <- as.numeric(as.character(data$Distance))
 
 #Add categories for Month, year and Month/year
@@ -141,17 +143,24 @@ open water swimming both went into the swimming category.
 activity_colors <- c("#ffa600","#003f5c","#bc5090","#ff6361")
 year_colors <- c("#F0BD1D","#c7e9b4","#7fcdbb","#41b6c4","#2c7fb8","#253494","#ff6361")
 
-overview_data<- filter(data, Activity.Type != "hiking", Activity.Type !="multi_sport") #Take out hiking and triathlons
+overview_data<- filter(data, Activity.Type != "hiking", Activity.Type !="multi_sport")
+#Take out hiking and triathlons
 overview_data$Activity.Type <- as.character(overview_data$Activity.Type) #Convert Activity to character
-overview_data$Activity.Type[overview_data$Activity.Type == "lap_swimming"] <- "swimming" #Combine all swimming activities into one category
+overview_data$Activity.Type[overview_data$Activity.Type == "lap_swimming"] <- "swimming" 
+#Combine all swimming activities into one category
 overview_data$Activity.Type[overview_data$Activity.Type == "open_water_swimming"] <- "swimming"
-overview_data$Activity.Type[overview_data$Activity.Type == "indoor_running"] <- "running" #Combine all running activities into one category
+overview_data$Activity.Type[overview_data$Activity.Type == "indoor_running"] <- "running"
+#Combine all running activities into one category
 overview_data$Activity.Type[overview_data$Activity.Type == "treadmill_running"] <- "running"
-overview_data$Activity.Type[overview_data$Activity.Type == "indoor_cycling"] <- "cycling" #Combine all cycling activities into one category
+overview_data$Activity.Type[overview_data$Activity.Type == "indoor_cycling"] <- "cycling" 
+#Combine all cycling activities into one category
 
-overview_data$Activity.Type <- as.factor(overview_data$Activity.Type) # convert activity back to a factor
-overview_data$Activity.Type <- factor(overview_data$Activity.Type,levels = c("cycling","swimming","running")) #add levels 
-overview_data <- overview_data[complete.cases(overview_data[ , 1]),] #Remove entries missing activity type
+overview_data$Activity.Type <- as.factor(overview_data$Activity.Type)
+# convert activity back to a factor
+overview_data$Activity.Type <- factor(overview_data$Activity.Type,levels = c("cycling","swimming","running"))
+#add levels 
+overview_data <- overview_data[complete.cases(overview_data[ , 1]),] 
+#Remove entries missing activity type
 overview_data <- overview_data[complete.cases(overview_data[ , 34]),] #Remove entries missing year
 overview_data <- filter(overview_data, Year != 2019) #exclude data from 2019
 
