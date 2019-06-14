@@ -51,8 +51,9 @@ for(i in c(1:12)){ #Insert entries with zero distance for monthes with no runnin
 			Aerobic.TE =NA,Avg.Run.Cadence=NA, Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,
 			Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,Avg.Vertical.Ratio=NA, 
 			Avg.Vertical.Oscillation=NA, Training.Stress.Score=NA,Grit=NA,Flow=NA,
-			Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,
-			Decompression=NA,Best.Lap.Time=NA, Number.of.Laps=NA,Max.Temp=NA
+			Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,Bottom.Time=NA,Min.Temp=NA,
+			Surface.Interval=NA,Decompression=NA,Best.Lap.Time=NA, Number.of.Laps=NA,
+			Max.Temp=NA
             )
             
       }
