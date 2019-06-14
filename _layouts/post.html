@@ -2,12 +2,13 @@
 layout: default 
 permalink: /blog/
 ---
- <ul class="entry-tags">
-          {% for tag in page.tags %}<li><a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
+ <ul >
+          {% for tag in page.tags %}<li><a class="entry-tags" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
  </ul>
 
+<h2>{{ page.title }}</h2>
 <time
-  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if
+  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •  By {{ page.author }}{% endif %}{% if
   page.meta %} • {{ page.meta }}{% endif %}</time
 >
 

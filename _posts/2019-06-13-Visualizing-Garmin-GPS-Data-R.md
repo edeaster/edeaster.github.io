@@ -3,10 +3,9 @@ layout: post
 author: Elizabeth Easter
 date: 2019-06-13
 title: "Visualizing Garmin GPS Data in R"
-tags: R , Visualization
+tags: R
 ---
 
-## Visualizing Garmin GPS Data using R
 
 The built-in tools in Strava and Garmin connect are great for getting an idea of 
 your training habits in the short term but after 5 years of collecting 
@@ -45,30 +44,27 @@ year_list = c(2014,2015,2016,2017,2018,2019)
 colnames(data)[colnames(data)=="Normalized.PowerÂ...NPÂ.."] <- "Normalized.Power"
 colnames(data)[colnames(data)=="Training.Stress.ScoreÂ."] <- "Training.Stress.Score"
 
-
-
 for(i in c(1:12)){ #Insert entries with zero distance for monthes with no running data
       for(j in year_list){
-            
-            
-           data<-add_row(data, Activity.Type ="running", Date = paste(j ,"-",i ,"-" ,"01"," ", "08:00:00", sep = ""),Favorite=NA,
-                          Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,Aerobic.TE =NA, Avg.Run.Cadence=NA,
-                         Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,
-                          Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,Training.Stress.Score=NA,Grit=NA,Flow=NA,
-                          Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,
-                          Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,Decompression=NA,Best.Lap.Time=NA,Number.of.Laps=NA,Max.Temp=NA
+		data<-add_row(data, Activity.Type ="running", Date = paste(j ,"-",i ,"-" ,"01"," ", "08:00:00", sep = ""),
+			Favorite=NA, Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,Aerobic.TE =NA,
+			Avg.Run.Cadence=NA, Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,Elev.Gain=NA,Elev.Loss=NA,
+			Avg.Stride.Length=NA,Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,
+			Training.Stress.Score=NA,Grit=NA,Flow=NA,Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,
+			Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,Decompression=NA,Best.Lap.Time=NA,
+			Number.of.Laps=NA,Max.Temp=NA
             )
             
       }
       
 }
 
-data<-add_row(data, Activity.Type ="lap_swimming", Date = paste("2018" ,"-","10" ,"-" ,"01"," ", "08:00:00", sep = ""),Favorite=NA,
-              Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,Aerobic.TE =NA, Avg.Run.Cadence=NA,
-              Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,
-              Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,Training.Stress.Score=NA,Grit=NA,Flow=NA,
-              Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,
-              Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,Decompression=NA,Best.Lap.Time=NA,Number.of.Laps=NA,Max.Temp=NA
+data<-add_row(data, Activity.Type ="lap_swimming", Date = paste("2018" ,"-","10" ,"-" ,"01"," ", "08:00:00", sep = ""),
+	Favorite=NA,Title =NA,Distance=0,Calories=NA,Time=NA,Avg.HR=NA,Max.HR=NA,Aerobic.TE =NA, Avg.Run.Cadence=NA,
+	Max.Run.Cadence=NA,Avg.Speed=NA,Max.Speed=NA,Elev.Gain=NA,Elev.Loss=NA,Avg.Stride.Length=NA,
+	Avg.Vertical.Ratio=NA, Avg.Vertical.Oscillation=NA,Training.Stress.Score=NA,Grit=NA,Flow=NA,
+	Total.Strokes=NA,Avg..Swolf=NA,Avg.Stroke.Rate=NA,Bottom.Time=NA,Min.Temp=NA,Surface.Interval=NA,
+	Decompression=NA,Best.Lap.Time=NA,Number.of.Laps=NA,Max.Temp=NA
 )
 
  ```

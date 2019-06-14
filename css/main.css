@@ -6,7 +6,7 @@ body {
     width: 60%;
 	  background-color: rgb(255,255,255);
 }
-nav ul {
+.nav_bar {
     font-family: 'Meera Inimai', sans-serif;
     padding: 10px;
     list-style: none;
@@ -85,7 +85,7 @@ h2{
 	font-family: 'Meera Inimai', sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 3px;
+  font-size: 35px;
   text-align: center;
   color: rgb(40,40,40);
   padding-top: 0px;
@@ -98,7 +98,7 @@ h3{
   font-weight: 300;
   font-style: normal;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   color: rgb(40,40,40);
   padding-top: 0px;
   text-decoration:none;
@@ -106,9 +106,9 @@ h3{
 h4{
 	 font-family: 'Meera Inimai', sans-serif;
   font-weight: 300;
-  font-style: normal;
-  font-size: px;
-  text-align: center;
+  font-style: left;
+  font-size: 25px;
+  text-align: left;
   color: rgb(40,40,40);
   padding-top: 0px;
   text-decoration:none;
@@ -137,4 +137,28 @@ p {
   content: "";
   clear: both;
   display: table;
+}
+
+pre code {
+  background-color: #eee;
+  display: block;
+  padding: 20px;
+}
+
+.entry-tags{
+	font-family: 'Meera Inimai', sans-serif;
+    font-weight: bold;
+    text-align: left;
+	text-decoration:none;
+	color: rgb(40,40,40);
+}
+a.entry-tags:hover{
+    color: rgb(75,0,130);
+}
+
+ul {
+	padding: 10px;
+    list-style: none;
+	position: relative;
+	
 }
