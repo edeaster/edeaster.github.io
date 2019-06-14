@@ -1,6 +1,6 @@
 title: Elizabeth Easter
 markdown: kramdown
-url: "http://elizabetheaster.com"
+url: "https://elizabetheaster.com"
 permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-feed
