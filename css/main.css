@@ -81,9 +81,18 @@ h1 {
   padding-top: 0px;
   
 }
-.section{
-  font-family: 'Meera Inimai', sans-serif;
+h2{
+	font-family: 'Meera Inimai', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3px;
+  text-align: center;
+  color: rgb(40,40,40);
+  padding-top: 0px;
+  text-decoration:none;
+	
 }
+
 h3{
   font-family: 'Meera Inimai', sans-serif;
   font-weight: 300;
@@ -94,7 +103,20 @@ h3{
   padding-top: 0px;
   text-decoration:none;
 }
-
+h4{
+	 font-family: 'Meera Inimai', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: px;
+  text-align: center;
+  color: rgb(40,40,40);
+  padding-top: 0px;
+  text-decoration:none;
+	
+}
+.section{
+  font-family: 'Meera Inimai', sans-serif;
+}
 
 p {
     font-family:'Meera Inimai', sans-serif;
