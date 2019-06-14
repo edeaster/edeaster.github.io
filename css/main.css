@@ -4,7 +4,7 @@
 body {
     margin: 80px auto;
     width: 60%;
-	  background-color: rgb(255,255,255);
+    background-color: rgb(255,255,255);
 }
 .nav_bar {
     font-family: 'Meera Inimai', sans-serif;
@@ -82,7 +82,7 @@ h1 {
   
 }
 h2{
-	font-family: 'Meera Inimai', sans-serif;
+  font-family: 'Meera Inimai', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 35px;
@@ -104,7 +104,7 @@ h3{
   text-decoration:none;
 }
 h4{
-	 font-family: 'Meera Inimai', sans-serif;
+  font-family: 'Meera Inimai', sans-serif;
   font-weight: 300;
   font-style: left;
   font-size: 25px;
@@ -123,7 +123,7 @@ p {
     font-size: 17px;
     line-height: 19px;
     color: rgb(100, 100, 100);
-	text-align: left;
+    text-align: left;
 }
 
 .column {
@@ -146,19 +146,19 @@ pre code {
 }
 
 .entry-tags{
-	font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Meera Inimai', sans-serif;
     font-weight: bold;
     text-align: left;
-	text-decoration:none;
-	color: rgb(40,40,40);
+    text-decoration:none;
+    color: rgb(40,40,40);
 }
 a.entry-tags:hover{
     color: rgb(75,0,130);
 }
 
 ul {
-	padding: 10px;
+    padding: 10px;
     list-style: none;
-	position: relative;
+    position: relative;
 	
 }
