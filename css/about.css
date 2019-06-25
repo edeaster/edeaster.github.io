@@ -1,0 +1,73 @@
+/************* GENERAL *************/
+
+.container {
+    min-height: 50vh;
+}
+
+section p {
+    grid-column: 4 / -1;
+    grid-column-gap: 1.5em;
+}
+
+@media all and  (max-width: 768px) {
+
+    section p {
+        grid-column: 1/ -1;
+    }
+}
+
+section {
+    font-size: calc(16px + .2vw);
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1.5em;
+    -ms-grid-columns: (1fr)[9];
+        grid-template-columns: repeat(9, 1fr);
+    padding: 0
+}
+
+@media all and (max-width: 768px) {
+
+    section {
+        grid-column-gap: 0em;
+    }
+    }
+  
+section:last-of-type {
+    padding-bottom: 3em;
+}
+
+/************* TEXT ***************/
+
+h1 {
+    grid-column: 1 / -1;
+    font-family: 'Gentium Book Basic', serif;
+}
+.email{
+	font-weight: 600;
+	
+}
+
+/************* IMAGES *************/
+
+
+figure.about__intro_img {
+    -ms-grid-column-span: 3;
+    -ms-grid-column: 1;
+        grid-column: 1 / span 3;
+    -ms-grid-row-span: 7;
+    -ms-grid-row: 1;
+        grid-row: 1 / span 7;
+    margin: 0
+}
+
+@media all and (max-width: 768px) {
+
+    figure.about__intro_img {
+        grid-column: 1 / -1;
+        margin-top: 1em;
+    }
+    }
+
+
+
