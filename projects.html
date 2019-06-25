@@ -1,8 +1,4 @@
---- 
-permalink: /blog/
----
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -20,7 +16,7 @@ permalink: /blog/
 	</script>
   <meta http-equiv="content-language" content="en-us" />
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/projects.css">
   <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700i&display=swap" rel="stylesheet">
 </head>
   
@@ -50,26 +46,26 @@ permalink: /blog/
     </ul>
    </nav>
   </header>  
-		 <ul >
-          {% for tag in page.tags %}<li><a class="entry-tags" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
- </ul>
+ 
+<body>
 
-<h2>{{ page.title }}</h2>
-<time
-  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •  By {{ page.author }}{% endif %}{% if
-  page.meta %} • {{ page.meta }}{% endif %}</time>
+  <div class = "project_container">
 
-{{ content }}
-	</body>
+    <ul class = "project_list">
+      <li class = "project_post">
+        <div class = "project_img" style="background-image: url(projects/garmin_vis/images/overview_time.png); background-color: #cccccc"> </div>
+        <div class = "project_meta">
+          <h2> <a class = "project_title" href = "garmin_data_project.html"> Visualizing Garmin GPS Data </a> </h2>
+          <p class = "project_summary"> This project delves into the GPS data I have collected over the past 5 years for
+                running, cycling and swimming. The visualizations were created using R along with ggplot2.</p>
+        </div>
+      </li>
+
+    </ul>
+   
+  </div>
+
+ 
+</body>
+
 </html>
-
- <ul >
-          {% for tag in page.tags %}<li><a class="entry-tags" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
- </ul>
-
-<h2>{{ page.title }}</h2>
-<time
-  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •  By {{ page.author }}{% endif %}{% if
-  page.meta %} • {{ page.meta }}{% endif %}</time>
-
-{{ content }}

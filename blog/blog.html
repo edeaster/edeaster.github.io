@@ -1,8 +1,4 @@
---- 
-permalink: /blog/
----
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -50,26 +46,23 @@ permalink: /blog/
     </ul>
    </nav>
   </header>  
-		 <ul >
-          {% for tag in page.tags %}<li><a class="entry-tags" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
- </ul>
+ 
+<body>
+  {% for post in site.posts %}
 
-<h2>{{ page.title }}</h2>
-<time
-  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •  By {{ page.author }}{% endif %}{% if
-  page.meta %} • {{ page.meta }}{% endif %}</time>
+  <div class= "blog_container">
+    
+    <div class = "blog_post">
 
-{{ content }}
-	</body>
+
+	<h2 class = "blog_post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2> 
+      <time> {{ post.date | date: "%b %-d, %Y" }}</time>  
+      <p class = "blog_summary"> This is a paragraph that will be the first paragraph or so of the 
+          the blog post. To inform the read whether they want to read more of the blog post.</p>
+    </div>
+  </div>
+{% endfor %}
+ 
+</body>
+
 </html>
-
- <ul >
-          {% for tag in page.tags %}<li><a class="entry-tags" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
- </ul>
-
-<h2>{{ page.title }}</h2>
-<time
-  >{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •  By {{ page.author }}{% endif %}{% if
-  page.meta %} • {{ page.meta }}{% endif %}</time>
-
-{{ content }}
