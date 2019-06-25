@@ -1,53 +1,6 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138955316-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-138955316-1');
-	</script>
-  <meta http-equiv="content-language" content="en-us" />
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/blog.css">
-  <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700i&display=swap" rel="stylesheet">
-</head>
-  
-   <header class = "header_main">
-     
-  <nav class= "nav_main" id="navbar">
-     <h1 class="header_main__logo">
-        <a class="header_main__link img-link" href="/" title="elizabetheaster.com">
-            <img class="main_logo" src='na' >
-        </a>
-      </h1>
-    
-     <ul class="nav_main__list">
-        
-        <li class="nav_main__item">
-            <a class="nav_main__link" href="/projects.html">Projects</a>
-        </li>
-        
-        <li class="nav_main__item">
-            <a class="nav_main__link" href='/about.html'>About</a>
-        </li>
-       
-       <li class="nav_main__item">
-            <a class='nav_main__link' href='/blog/blog.html'>Blog</a>
-        </li>
-    
-    </ul>
-   </nav>
-  </header>  
- 
-<body>
+---
+layout: default
+---
   {% for post in site.posts %}
 
   <div class= "blog_container">
@@ -63,6 +16,4 @@
   </div>
 {% endfor %}
  
-</body>
 
-</html>
