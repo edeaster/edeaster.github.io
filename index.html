@@ -1,44 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <meta charset- "UTF-8">
-    <meta name= "viewport" content = "width=device-width, initia-scale=1"
-	<head>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138955316-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+---
+layout: default
+title: Elizabeth Easter
+---
 
-		gtag('config', 'UA-138955316-1');
-	</script>
-    <title>Elizabeth Easter</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="https://fonts.googleapis.com/css?family=Meera+Inimai" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.typekit.net/cru3zkp.css">
-	</head>
-	<body>
-    <div class="header">
-      <h1 class="name_text">Elizabeth Easter</h1>
-    </div>
-		<nav>
-    		<ul>
-	        	<li><a href="/about">about</a></li>
-        		<li><a href="/Projects">projects</a></li>
-            <li><a href="/Resume">more</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="project_container">
-        	<h1> First Project <h1>
-              <p> Brief description of work. This will be a paragraph explaining what you did, why you did this work, and briefly how you did it.
-                  The image below will link to further information on the project.<p>
-        <div class = "image_container">
-          <a href="image.png"><img src="image.png"</a>
-            </div> <!--Image container-->
-          </div> <!--project container-->
-		</div> <!--container-->
+<div class="project_container">
+          <h1> <a class= "project_head" href= "garmin_data_project.html" >Visualizing Garmin GPS Data </a></h1>
+           
+   <p> This project delves into the GPS data I have collected over the past 5 years for
+                running, cycling and swimming. The visualizations were created using R along with ggplot2. </p>
+         <div class="row">
+          <div class="column">
+            <img src="projects/garmin_vis/images/overview_time.png" alt="1" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="projects/garmin_vis/images/month_year_all.png" alt="2" style="width:100%">
+          </div>
+          
+        </div>
+          </div><!--project container-->
 
-	</body>
-</html>
+

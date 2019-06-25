@@ -1,0 +1,62 @@
+/******** GENERAL *********/
+.project_container {
+    font-size: calc(16px + .2vw);
+    min-height: 50vh;
+    padding: 1em 1em 3em 1em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 2em;
+}
+
+.project_list{
+  grid-column: 1 / 13;
+  list-style: none;
+  margin: 0 3em;
+  padding: 0;
+  
+}
+
+.project_post {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1em;
+    margin: 1em 0 3em 0;
+}
+
+.project_img{
+    grid-column: 1/ 6;
+    -ms-grid-row-span: 7;
+    -ms-grid-row: 2;
+        grid-row: 2 / span 7;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    margin: 1.4em 0;
+    background-color:  #cccccc;
+}
+
+.project_meta {
+    grid-column: 5 / 13;
+    -ms-grid-row-span: 9;
+    -ms-grid-row: 1;
+        grid-row: 1 / span 9;
+    background-color: white;
+    padding: 1em 1.8em;
+    box-shadow: 1px 2px 9px 0px rgba(11, 36, 74, .2) ;
+}
+
+
+.project_meta h4 {
+ margin: 0.8em 0 0 0 ;
+}
+
+.project_meta .project_summary {
+ margin-top: 1em ;
+}
+
+a.project_title{
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+	font-family: 'Gentium Book Basic', serif;
+}

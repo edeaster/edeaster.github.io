@@ -1,0 +1,86 @@
+
+
+html {
+  
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+.item1{ grid-area: Header;}
+.item2{ grid-area: Right; }
+.item3{ grid-area: Left;}
+.item4{ grid-area: Main;}
+.item5{ grid-area: Footer;}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 'Header Header Header Header Header'
+                        'Left Main Main Main Right'
+                        'Left Main Main Main Right'
+                        'Footer Footer Footer Footer Footer';
+  padding: 10px;
+  Height: 600px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+  line-height: 15px;
+
+}
+
+.nav_list{
+  list-style: none;
+  text-align: center;
+}
+
+div ul li{
+  display: inline;
+  margin: 10px;
+  
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  
+  color: black;
+}
+.fa-github{
+  
+  color: black;
+}
+
+a.nav_bar_link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #0B244A;
+  text-transform: uppercase;
+   font-family: "Segoe UI";
+     font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    display: grid;
+    grid-template-areas: 
+      'Header Header Header Header Header' 
+      'Left Left Left Left Left' 
+      'Main Main Main Main Main ' 
+      'Right Right Right Right Right Right' 
+      'Footer Footer Footer Footer Footer ';
+  }
+}
