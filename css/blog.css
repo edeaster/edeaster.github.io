@@ -15,5 +15,7 @@
 .blog_post_title{
   padding: 0;
   margin: 1.8em 0 .5em 0;
+  text-decoration: none;
+  
   
 }

@@ -1,0 +1,25 @@
+p{
+font-family: "mr-eaves-xl-sans", sans-serif;
+	padding-bottom: 1em;
+
+}
+
+.project_header{
+	padding: 0 3em;
+	margin: 1em 0;
+}
+
+.project_container{
+	padding: 0 1em 1em 1em;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+.image_container{
+	padding: 2em 1em;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}

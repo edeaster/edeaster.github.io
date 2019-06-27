@@ -47,6 +47,13 @@ h1 {
     margin-bottom: 1.2em;
     line-height: 1.4em;
 }
+h2 {
+    font-size: calc(1.5em + .5vw);
+    margin-top: 0;
+    margin-bottom: .75em;
+    line-height: 1em;
+}
+
 
 /************* HEADER ************/
 
