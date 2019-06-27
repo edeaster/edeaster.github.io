@@ -17,14 +17,14 @@
 	grid-column: 1/-1;
 	padding: 0 3em 1em 3em;
 	margin: 0 auto;
-
+	max-width: 1300px;
 }
 
 figure {
     grid-column:3/9;
     justify-self: center;
     margin-top: 1.4em;
-    margin-bottom: 1em
+    margin-bottom: 1em;
 }
 
 @media all and (max-width: 768px) {
