@@ -10,6 +10,9 @@
   margin: 0 auto;
   padding: 1em 1em;
 }
+body {
+  overflow-x: hidden;
+}
 /************* GENERAL *************/
 
 body {
@@ -98,7 +101,7 @@ h2 {
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.06em;
-    text-transform: inherit;
+    text-transform: uppercase;
     
   }
   }
