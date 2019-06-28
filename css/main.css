@@ -56,7 +56,10 @@ h2 {
     margin-bottom: .75em;
     line-height: 1em;
 }
-
+.page_title{
+	grid-column: 3/11;
+	
+}
 
 /************* HEADER ************/
 

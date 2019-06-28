@@ -2,12 +2,14 @@
 .project_header{
 	padding: 0 1em;
 	margin: 1em 0;
-	grid-column: 3/11;
+	justify-self: center;
+	grid-column: 2/11;
 }
 .project_subheader{
 	padding: 0 0em;
 	margin: 1em 0;
-	grid-column: 3/11;
+	grid-column: 2/11;
+
 }
 
 .project_container{
@@ -21,20 +23,16 @@
 }
 
 figure {
-    grid-column:3/9;
+    grid-column:2/11;
     justify-self: center;
-    margin-top: 1.4em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
-
-@media all and (max-width: 768px) {
-
-    figure {
-        margin-top: 0;
-		margin-bottom: 0;
-    }
-    }
-
+.project_container p{
+	font-family: "mr-eaves-xl-sans", sans-serif;
+	padding-bottom: 1em;
+	grid-column: 2/11;
+}
 
 figure img{
 	object-fit: contain;
@@ -46,17 +44,25 @@ figure img{
 
     figure {
         grid-column: 1 / -1;
+		margin-top: 0;
+		margin-bottom: 0;
     }	
-}
-.project_container p{
-	font-family: "mr-eaves-xl-sans", sans-serif;
-	padding-bottom: 1em;
-	grid-column: 3/9;
-}
-
-@media all and (max-width: 768px){
+	figure img{
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+	}
 	.project_container p{
 		padding-bottom: 0;
-	}	
-	
+		grid-column:1/-1;	
+
+	}
+	.project_header{
+		grid-column:1/-1;	
 }
+	.project_subheader{
+		grid-column: 1/-1;
+
+		
+	}
+}
+
