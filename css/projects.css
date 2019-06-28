@@ -5,11 +5,11 @@
     padding: 1em 1em 3em 1em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 2em;
+
 }
 
 .project_list{
-  grid-column: 1 / 13;
+  grid-column: 1 / -1;
   list-style: none;
   margin: 0 3em;
   padding: 0;
@@ -62,21 +62,31 @@ a.project_title{
 }
 
 
-@media all and (max-width: 750px){
-	
+@media all and (max-width: 768px){
+	.project_container {
+ 
+    padding: .5em .5em 1.5em .5em;
+}
+
+	.project_list{
+		margin: 0 1em;
+  
+}
 	.project_img{
-		grid-column: 1/-1;
+		grid-column: 2/12;
 		grid-row: 1/span 4;
+		background-position: center;
 	}
 	
 	.project_meta{
-		grid-column: 1/-1;
+		grid-column: 2/12;
 		grid-row: 4/span 4;
+		
 	}
 	
 	.project_post{
 		margin: 0 0 3em 0;
-
+		padding: 0 0 0 0;
 		
 	}
 	
