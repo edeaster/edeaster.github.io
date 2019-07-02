@@ -48,29 +48,20 @@ div ul li{
 }
 
 
-.fab {
-  padding: 10px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+ion-icon{
+	font-size: calc(.5em + 2vw);
+	padding: 15px;
+	border-radius: 50%;
+	margin: 5px 2px;
+	text-align: center;
+	color: black;
+
 }
 
-.fab:hover {
+ion-icon:hover {
     opacity: 0.7;
 }
 
-.fa-linkedin-in {
-  
-  color: black;
-
-}
-.fa-github{
-  
-  color: black;
-}
 
 a.nav_bar_link {
   font-size: 25px;
