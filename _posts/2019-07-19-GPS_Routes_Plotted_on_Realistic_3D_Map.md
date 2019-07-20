@@ -11,7 +11,7 @@ subtitle: Guide to creating 3D maps of GPS routes using Rayshader
 <div class= "blog_post_container">   
 
 	<figure>
-		<img src="/projects/Routes3D/route_gif2.gif" width="600" height="600" align="center">
+		<img  class= "post_img" src="/projects/Routes3D/route_gif2.gif" width="600" height="600" align="center">
 	</figure>
 
 	<h2> Introduction </h2>
@@ -169,7 +169,7 @@ subtitle: Guide to creating 3D maps of GPS routes using Rayshader
 	</pre>
 	</div>
 	<figure>
-	<img src="/projects/Routes3D/overlay_image.png" width="800" height="400" align="center">
+	<img class= "post_img" src="/projects/Routes3D/overlay_image.png" width="800" height="400" align="center">
 	</figure>
 
 	<h2> Plot the 3D map using Rayshader </h2>
@@ -202,7 +202,7 @@ subtitle: Guide to creating 3D maps of GPS routes using Rayshader
 	</div>
 	
 	<figure>
-	<img src="/projects/Routes3D/desert.png" width="800" height="400" align="center">
+	<img  class= "post_img" src="/projects/Routes3D/desert.png" width="800" height="400" align="center">
 	</figure>
 	
 	<p> Adding the overlay image in Rayshader is quite easy. </p>
@@ -228,7 +228,7 @@ subtitle: Guide to creating 3D maps of GPS routes using Rayshader
 	</div>
 	
 	<figure>
-	<img src="/projects/Routes3D/3D_map_overlay.png" width="800" height="400" align="center">
+	<img  class= "post_img" src="/projects/Routes3D/3D_map_overlay.png" width="800" height="400" align="center">
 	</figure>
 	
 	<p>That looks pretty good. Next we’ll add the GPS route.  </p>
@@ -271,7 +271,7 @@ subtitle: Guide to creating 3D maps of GPS routes using Rayshader
 	</div>
 	<p> </p>
 	<figure>
-	<img src="/projects/Routes3D/route.png" width="800" height="400" align="center">
+	<img  class= "post_img" src="/projects/Routes3D/route.png" width="800" height="400" align="center">
 	</figure>
 	<h2>Conclusion </h2>
 	<p>That is it for this post. There is a lot more that can be done using the rayshader

@@ -42,6 +42,8 @@ section:last-of-type {
 h1 {
     grid-column: 1 / -1;
     font-family: 'Gentium Book Basic', serif;
+	font-size:calc(2.5em + .5vw);
+	text-align: center;
 }
 .email{
 	font-weight: 600;
