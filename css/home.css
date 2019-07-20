@@ -77,6 +77,12 @@ a.nav_bar_link {
     display: grid;
 
   }
+  ion-icon{
+	font-size: calc(1em + 2vw);
+	padding: 5px;
+	
+
+}
   
   .name{
 	
