@@ -3,7 +3,7 @@
 	padding: 0 1em;
 	margin: 1em 0;
 	justify-self: center;
-	grid-column: 2/11;
+	grid-column: 2/12;
 }
 .project_subheader{
 	padding: 0 0em;
@@ -15,7 +15,7 @@
 .project_container{
 	
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	grid-column: 1/-1;
 	padding: 0 3em 1em 3em;
 	margin: 0 auto;
@@ -23,7 +23,7 @@
 }
 
 figure {
-    grid-column:2/11;
+    grid-column:2/12;
     justify-self: center;
     margin-top: 1em;
     margin-bottom: .5em;

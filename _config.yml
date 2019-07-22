@@ -4,3 +4,7 @@ url: "http://elizabetheaster.com"
 permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-feed
+feed:
+  categories:
+    - R
+    - other

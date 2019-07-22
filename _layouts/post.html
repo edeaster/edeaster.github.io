@@ -7,8 +7,8 @@ permalink: /blog/
 <h1 class = "page_title" align= "center">{{ page.title }}</h1>
 <h3 class = "subtitle" align= "center">{{ page.subtitle }} </h3>
 <h3 align="center"> <time>
-	{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •  By {{ page.author }}{% endif %}{% if
-  page.meta %} • {{ page.meta }}{% endif %}{% if page.tag %} •  By {{ page.tag }}{% endif %}</time></h3>
+	{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} •  By {{ page.author }}{% endif %}{% if
+  page.meta %} • {{ page.meta }}{% endif %}{% if page.tags %} • <a class = "post_tags" href="/tags/{{ page.tag }}/"> {{ page.tags }} </a>{% endif %}</h3>
 
 {{ content }}
 	

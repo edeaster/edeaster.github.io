@@ -22,7 +22,16 @@ p{
 pre {
   overflow-x: auto;
 }
-
+a.read_more {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	
+}
+.subtitle_post{
+	font-size: calc(.7em + .5vw);
+	margin: .5em 0 .75em .25em;
+}
 
 .highlight code {
     font-size: 0.8em;
@@ -42,7 +51,7 @@ h1, h2, h3, .page_title{
 	margin: .5em 0 .25em 0;
 	
 }
-h2, h3{
+h2, h3,h4{
 	font-family: "Segoe UI";
 }
 

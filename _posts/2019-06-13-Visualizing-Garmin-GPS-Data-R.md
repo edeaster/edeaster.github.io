@@ -4,6 +4,10 @@ author: Elizabeth Easter
 date: 2019-06-13
 title: "Visualizing Garmin GPS Data in R"
 tags: R
+summary: "The built-in tools in Strava and Garmin connect are great for getting an idea of 
+	your training habits in the short term but after 5 years of collecting 
+	data from my running, cycling and swimming activities I was interested in looking at 
+	the bigger picture. Using R along with ggplot2 I was able to create the visuals I've been wanting to see. The following is a look into how I did it."
 ---
 <body>
 <div class= "blog_post_container">   
@@ -11,7 +15,7 @@ tags: R
 	<p>The built-in tools in Strava and Garmin connect are great for getting an idea of 
 	your training habits in the short term but after 5 years of collecting 
 	data from my running, cycling and swimming activities I was interested in looking at 
-	the bigger picture. So I used R along with ggplot2 to create the visuals I've dreamed of. The following is a look into how I did it. </p>
+	the bigger picture. Using R along with ggplot2 I was able to create the visuals I've been wanting to see. The following is a look into how I did it. </p>
 
 
 	<h2> Obtaining the data: </h2>
@@ -19,7 +23,7 @@ tags: R
 	<p>On Garmin Connect you can download individual GPS files. However, this requires going through
 	every single file since Garmin doesn't provide a aggregated download option.
 	For me, this was close to 800 in the past five years. For this project, it wasn't necessary
-	to download the all the GPS data, but in a future post I will detail how this can be done. Instead, 
+	to download the all the GPS data. Instead, 
 	Garmin provides an option to download a csv file that contains summarized details for every activity.</p>
 
 	<p>This csv file contains columns for the name of the activity, distance, time and various metrics.
@@ -262,7 +266,7 @@ tags: R
 
 	<h2> Conclusion </h2>
 	<p>To further answer questions about how my training has changed over the years I created visuals specific to each activitiy type.
-	The full code for this project is available on my [github page](https://github.com/edeaster/Garmin-Visualization) . To view the full set of visuals including
-	a break down by each activity type please visit my [website](https://elizabetheaster.com/garmin_data_project.html) .</p>
+	The full code for this project is available on my <a href="https://github.com/edeaster/Garmin-Visualization">github page </a>) . To view the full set of visuals including
+	a break down by each activity type please visit my <a href"https://elizabetheaster.com/garmin_data_project.html">website <a></p>
 </div>
 </body>

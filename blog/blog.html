@@ -8,10 +8,10 @@ layout: default
     <div class = "blog_post">
 
 
-	<h2 class = "blog_post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2> 
+	<h2 class = "blog_post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<h4 class= "subtitle_post"> {{ post.subtitle }}</h4>
       <time> {{ post.date | date: "%b %-d, %Y" }}</time>  
-      <p class = "blog_summary"> This is a paragraph that will be the first paragraph or so of the 
-          the blog post. To inform the read whether they want to read more of the blog post.</p>
+      <p class = "blog_summary"> {{ post.summary }} <a class= "read_more" href="{{ post.url }}">Read more... </a></p>
     </div>
   </div>
 {% endfor %}

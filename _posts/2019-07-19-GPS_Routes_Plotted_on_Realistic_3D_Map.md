@@ -3,9 +3,12 @@ layout: post
 author: Elizabeth Easter
 date: 2019-07-19
 title: "GPS Routes Plotted on Realistic 3D Map"
-tags: R
+tags: "R"
 subtitle: Guide to creating 3D maps of GPS routes using Rayshader
-
+summary: "Going into this project I had a vision of somehow plotting my cycling routes on a realistic 3D map.
+	Previously, I had mapped my routes on a 2D map to create a heat map  but I felt like something was
+	missing. It occured to me that I had the elevation data for all of these routes and it seemed likely
+	that open source elevation data was available." 
 ---
 <body>
 <div class= "blog_post_container">   
@@ -19,7 +22,7 @@ subtitle: Guide to creating 3D maps of GPS routes using Rayshader
 	<p>Going into this project I had a vision of somehow plotting my cycling routes on a realistic 3D map.
 	Previously, I had mapped my routes on a 2D map to create a heat map  but I felt like something was
 	missing. It occured to me that I had the elevation data for all of these routes and it seemed likely
-	that open source elevation data was available. Eventually I came across the Rayshader package and 
+	that open source elevation data was available. Eventually I came across the <a href= "https://github.com/tylermorganwall/rayshader">Rayshader</a> package and 
 	was blown away; it was exactly what I was looking for to create the 3D map. This article will go 
 	through how to create your own 3D mapped route. The source code is available on my 
 	<a href ="https://github.com/edeaster/Routes3D">github page</a></p>
