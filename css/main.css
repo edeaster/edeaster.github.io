@@ -203,3 +203,19 @@ a.header_main__link .main_logo{
 figure img{
   max-width: 100%;
 }
+
+/************** TAG PAGE ************/
+
+ul.post-list{
+	
+	text-decoration: none;
+	list-style-type: none;
+	
+	
+}
+
+.tag_page{
+	margin: 1em 2em;
+	
+	
+}
